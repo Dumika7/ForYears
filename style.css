@@ -412,10 +412,20 @@ a {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 14px;
+  opacity: 1 !important;
+  transform: none !important;
+  visibility: visible !important;
+}
+
+.gallery-grid.reveal {
+  opacity: 1 !important;
+  transform: none !important;
+  visibility: visible !important;
 }
 
 .gallery-card {
   aspect-ratio: 1;
+  min-height: 220px;
   border: 0;
   cursor: zoom-in;
   padding: 0;
