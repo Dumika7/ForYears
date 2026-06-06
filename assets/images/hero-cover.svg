@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000" role="img" aria-label="Cena romantica elegante para capa">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#35131b"/>
+      <stop offset="0.45" stop-color="#9a344d"/>
+      <stop offset="1" stop-color="#f4b8c5"/>
+    </linearGradient>
+    <radialGradient id="light" cx="72%" cy="26%" r="52%">
+      <stop offset="0" stop-color="#fff5db" stop-opacity="0.9"/>
+      <stop offset="0.36" stop-color="#f0d493" stop-opacity="0.28"/>
+      <stop offset="1" stop-color="#f0d493" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="soft">
+      <feGaussianBlur stdDeviation="18"/>
+    </filter>
+  </defs>
+  <rect width="1600" height="1000" fill="url(#bg)"/>
+  <rect width="1600" height="1000" fill="url(#light)"/>
+  <path d="M0 790 C250 690 380 820 580 720 C760 630 850 650 1010 735 C1210 840 1370 710 1600 770 L1600 1000 L0 1000 Z" fill="#fff7f8" opacity="0.22"/>
+  <circle cx="1180" cy="250" r="210" fill="#fff7f8" opacity="0.12" filter="url(#soft)"/>
+  <circle cx="1320" cy="420" r="130" fill="#f0d493" opacity="0.16" filter="url(#soft)"/>
+  <g opacity="0.78">
+    <path d="M965 530 C850 414 652 482 654 655 C656 828 878 872 965 755 C1052 872 1274 828 1276 655 C1278 482 1080 414 965 530 Z" fill="#fff7f8"/>
+    <path d="M965 570 C879 484 730 535 731 662 C733 790 899 823 965 737 C1031 823 1197 790 1199 662 C1200 535 1051 484 965 570 Z" fill="#c49a49" opacity="0.36"/>
+  </g>
+  <g fill="#fff7f8" opacity="0.34">
+    <circle cx="170" cy="170" r="4"/>
+    <circle cx="260" cy="300" r="3"/>
+    <circle cx="430" cy="150" r="5"/>
+    <circle cx="690" cy="240" r="3"/>
+    <circle cx="1460" cy="180" r="4"/>
+    <circle cx="1370" cy="670" r="3"/>
+  </g>
+</svg>

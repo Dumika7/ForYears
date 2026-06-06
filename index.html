@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Feliz 4 anos, meu amor</title>
+    <meta
+      name="description"
+      content="Uma landing page romântica para celebrar 4 anos de amor, memórias e sonhos juntos."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="loader" data-loader>
+      <div class="loader__ring"></div>
+      <p>Preparando nossa lembrança...</p>
+    </div>
+
+    <div class="hearts-sky" aria-hidden="true" data-hearts-sky></div>
+
+    <header class="hero" id="inicio">
+      <div class="hero__parallax" aria-hidden="true"></div>
+      <div class="hero__overlay"></div>
+      <nav class="topbar" aria-label="Navegacao principal">
+        <a href="#inicio" class="brand">Nossa história</a>
+        <button class="topbar__toggle" type="button" aria-label="Abrir menu" data-menu-toggle>
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <div class="topbar__links" data-menu>
+          <a href="#tempo">Tempo</a>
+          <a href="#historia">História</a>
+          <a href="#galeria">Galeria</a>
+          <a href="#carta">Carta</a>
+          <a href="#surpresa">Surpresa</a>
+        </div>
+      </nav>
+
+      <div class="hero__content reveal">
+        <p class="eyebrow">4 anos juntos</p>
+        <h1 data-typewriter="Feliz aniversário de 4 anos juntos, meu amor ❤️"></h1>
+        <p>Há 4 anos construindo a história mais bonita da minha vida.</p>
+        <a href="#tempo" class="button button--primary">Ver Nossa História</a>
+      </div>
+    </header>
+
+    <main>
+      <section class="section section--soft" id="tempo">
+        <div class="section__inner">
+          <div class="section__heading reveal">
+            <p class="eyebrow">Cada minuto importa</p>
+          <h2>Nosso tempo de amor</h2>
+          <p>Desde o dia em que nossa história ganhou um novo nome.</p>
+          </div>
+          <div class="counter-grid reveal" data-counter></div>
+        </div>
+      </section>
+
+      <section class="section" id="historia">
+        <div class="section__inner">
+          <div class="section__heading reveal">
+            <p class="eyebrow">Capítulos favoritos</p>
+            <h2>Nossa história</h2>
+            <p>Alguns momentos que guardo como partes preciosas de nós dois.</p>
+          </div>
+          <div class="timeline" data-timeline></div>
+        </div>
+      </section>
+
+      <section class="section section--rose" id="galeria">
+        <div class="section__inner">
+          <div class="section__heading reveal">
+            <p class="eyebrow">Instantes guardados</p>
+            <h2>Galeria de fotos</h2>
+            <p>Pequenos retratos de uma vida que fica mais bonita quando estamos juntos.</p>
+          </div>
+          <div class="gallery-grid reveal" data-gallery></div>
+        </div>
+      </section>
+
+      <section class="section" id="motivos">
+        <div class="section__inner">
+          <div class="section__heading reveal">
+            <p class="eyebrow">Do fundo do coração</p>
+            <h2>25 motivos pelos quais eu te amo</h2>
+          </div>
+          <div class="reasons-grid" data-reasons></div>
+        </div>
+      </section>
+
+      <section class="section section--paper" id="carta">
+        <div class="section__inner letter-layout">
+          <div class="section__heading reveal">
+            <p class="eyebrow">Para você</p>
+            <h2>Carta digital</h2>
+            <p>Uma carta para abrir devagar, como quem segura uma lembrança nas mãos.</p>
+          </div>
+          <div class="letter-stage reveal">
+            <button class="envelope" type="button" data-open-letter>
+              <span class="envelope__flap"></span>
+              <span class="envelope__body"></span>
+              <span class="envelope__seal">Abrir Carta</span>
+            </button>
+            <article class="letter" data-letter aria-live="polite">
+              <h3>Meu amor,</h3>
+              <p data-letter-text></p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section--music" id="musica">
+        <div class="section__inner music-layout reveal">
+          <div>
+            <p class="eyebrow">Nossa trilha</p>
+            <h2>Nossa música</h2>
+            <p>Uma trilha para lembrar que algumas canções parecem ter sido feitas para nós.</p>
+          </div>
+          <div class="player" data-player>
+            <audio preload="metadata" src="assets/audio/nossa-musica.mp3" data-audio></audio>
+            <button class="player__button" type="button" data-play aria-label="Tocar música">Play</button>
+            <div class="player__meta">
+              <strong>Música do nosso amor</strong>
+              <span data-time>00:00 / 00:00</span>
+              <input type="range" min="0" max="100" value="0" data-progress aria-label="Progresso da música" />
+            </div>
+            <label class="volume">
+              Volume
+              <input type="range" min="0" max="1" step="0.01" value="0.85" data-volume />
+            </label>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="memoria">
+        <div class="section__inner">
+          <div class="section__heading reveal">
+            <p class="eyebrow">Lembranças vivas</p>
+            <h2>Árvore da memória</h2>
+            <p>Cada folha guarda uma lembrança que floresceu no nosso caminho.</p>
+          </div>
+          <div class="memory-tree reveal">
+            <div class="tree" data-memory-tree aria-label="Árvore interativa de lembranças"></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section final-message" id="mensagem-final">
+        <div class="section__inner reveal">
+          <p class="eyebrow">Sempre você</p>
+          <h2>E se eu pudesse voltar no tempo...</h2>
+          <p data-final-line>Eu escolheria você novamente. ❤️</p>
+        </div>
+      </section>
+
+      <section class="section surprise" id="surpresa">
+        <div class="section__inner reveal">
+          <p class="eyebrow">Última página</p>
+          <h2>Tenho uma última surpresa</h2>
+          <button class="button button--glow" type="button" data-open-surprise>
+            Tenho uma última surpresa ❤️
+          </button>
+        </div>
+      </section>
+    </main>
+
+    <button class="back-to-top" type="button" data-back-top aria-label="Voltar ao topo">↑</button>
+
+    <div class="lightbox" data-lightbox aria-hidden="true">
+      <button class="lightbox__close" type="button" data-close-lightbox aria-label="Fechar">×</button>
+      <img src="" alt="" data-lightbox-image />
+      <p data-lightbox-caption></p>
+    </div>
+
+    <div class="modal" data-surprise-modal aria-hidden="true">
+      <div class="modal__panel">
+        <button class="modal__close" type="button" data-close-surprise aria-label="Fechar">×</button>
+        <p class="eyebrow">Promessa</p>
+        <h2>Meu presente é continuar escolhendo você.</h2>
+        <p>
+          Que venham todos os próximos anos: com abraços demorados, sonhos grandes,
+          dias simples e a certeza bonita de que nosso amor é casa.
+        </p>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
